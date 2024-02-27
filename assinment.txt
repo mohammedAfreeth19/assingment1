@@ -1,0 +1,69 @@
+What
+HTTP1.1 and HTTP2 are both protocols used for the transfer of data between a client and a server over the internet. 
+
+*Request Multiplexing : HTTP1.1 can only process one request per connection at a time, meaning a browser might have to open multiple connections to a server to download all of a page's resources.
+ HTTP2, on the other hand allows multiple requests and responses to be sent and received simultaneously over a single connection, which can significantly improve page load times.
+
+*Header Compression : HTTP2 uses HPACK compression for HTTP headers, reducing the overhead of sending additional headers with each request and response. 
+This can result in faster load times, especially for sites with many small resources.
+
+*Server Push : HTTP2 allows servers to proactively push resources to the client before they are requested.
+ This can be useful for loading critical resources like CSS and JavaScript files faster.
+
+*Binary Protocol : HTTP2 uses a binary framing layer instead of text based protocol, which makes it more efficient for computers to parse and process.
+
+*Backward Compatibility : HTTP2 maintains backward compatibility with HTTP1.1. This means that if a client or server doesn't support HTTP2, they can still fall back to using HTTP1.1.
+
+6. **Encryption**: While HTTP1.1 can be used with HTTPS for secure connections, HTTP2 is designed with security in mind and requires the use of HTTPS.
+ This ensures that all data transferred between the client and the server is encrypted.
+
+Write a blog about object and it's internal  representation in Javascript?
+   *A JavaScript object is a collection of unordered properties. Properties can usually be changed, added, and deleted, but some are read only. 
+    Objects in JavaScript are very much similar to the objects in real-life. We can see a lot of Objects around us in this real world, each with its own set of properties.
+   *JavaScript is a versatile and powerful programming language that is widely used for web development, among other applications. 
+      One of its key features is its use of objects to represent data and functionality.In this blog, we'll explore what objects are in JavaScript and how they are represented internally.
+  1 .what are the objects in Java Script:
+   *In JavaScript, an object is a collection of key-value pairs, where the keys are strings (or Symbols) and the values can be any data type, including other objects.
+      Objects in JavaScript can represent complex data structures, such as arrays, functions, and even other objects.
+    example:
+               const person = {
+                        name: 'John',
+                         age: 30,
+                       address: {
+                                 city: 'New York',
+                                 country: 'USA'
+       }
+     };
+  2.Internal Representation of Objects in JavaScript:
+        Internally, JavaScript engines use various data structures to represent objects, depending on the properties and methods of the object. 
+        One common internal representation is a hash table, where each key-value pair is stored as an entry in the hash table. 
+        This allows for fast access to properties and methods by their keys.
+  3.Creating Objects in JavaScript:
+        There are several ways to create objects in JavaScript. One common way is to use object literal notation, as shown in the previous example. 
+       Another way is to use the new keyword to create an instance of a constructor function:
+
+       
+       function Person(name, age) {
+        this.name = name;
+       this.age = age;
+        }
+
+  4. Conclusion:
+         Objects are a fundamental part of JavaScript and are used to represent data and functionality in a flexible and powerful way. 
+       They are internally represented using data structures like hash tables, which allow for fast access to properties and methods. 
+        Understanding how objects work in JavaScript is essential for writing effective and efficient code in the language.
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
